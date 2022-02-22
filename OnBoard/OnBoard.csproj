@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4672FB2A-349D-4556-ADD6-1BBEF733D5CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OnBoard</RootNamespace>
+    <AssemblyName>OnBoard</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>E:\.NET Projeler\EDSCloudComputing\EDSCloudComputing\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.0.4.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="IPAddressControlLib, Version=1.0.3039.20052, Culture=neutral, PublicKeyToken=9695e912950a5d9b">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IPAddressControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=4.1.3.1, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.4.1.3.1\lib\net461\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.6.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.6.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.6.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.3\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ConnectionString.cs" />
+    <Compile Include="Database\DatabaseOperation.cs" />
+    <Compile Include="Database\PostgreSQLDatabaseOperation.cs" />
+    <Compile Include="ExtensionMethods\ActiveATPExtensions.cs" />
+    <Compile Include="ExtensionMethods\ActiveCabExtensions.cs" />
+    <Compile Include="ExtensionMethods\BoolExtensions.cs" />
+    <Compile Include="ExtensionMethods\ByteExtensions.cs" />
+    <Compile Include="ExtensionMethods\TrainDoorClosedAndLockedExtensions.cs" />
+    <Compile Include="ExtensionMethods\TrainLeftDoorOpenedExtensions.cs" />
+    <Compile Include="ExtensionMethods\TrainDirectionExtensions.cs" />
+    <Compile Include="ExtensionMethods\WakeUpTrainExtensions.cs" />
+    <Compile Include="HelperClass.cs" />
+    <Compile Include="Localization.Designer.cs">
+      <DependentUpon>Localization.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MessagePatterns\MessageBuilder\ATS_TO_OBATO_MessageBuilder.cs" />
+    <Compile Include="ModalForms\TrainDetailModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalForms\TrainDetailModal.Designer.cs">
+      <DependentUpon>TrainDetailModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTypeConverter.cs" />
+    <Compile Include="OBATP\ATS_TO_OBATO_InitMessageInComing.cs" />
+    <Compile Include="OBATP\ATS_TO_OBATO_MessageInComing.cs" />
+    <Compile Include="OBATP\IATS.cs" />
+    <Compile Include="OBATP\IWSATC.cs" />
+    <Compile Include="Logging.cs" />
+    <Compile Include="MessagePatterns\DataPackets\OBATO_TO_ATS\Adapter\OBATO_TO_ATSAdaptee.cs" />
+    <Compile Include="MessagePatterns\DataPackets\OBATO_TO_ATS\Adapter\OBATO_TO_ATSAdapter.cs" />
+    <Compile Include="MessagePatterns\DataPackets\OBATP_TO_WSATP\Adapter\OBATP_TO_WSATPAdaptee.cs" />
+    <Compile Include="MessagePatterns\DataPackets\OBATP_TO_WSATP\Adapter\OBATP_TO_WSATPAdapter.cs" />
+    <Compile Include="MessagePatterns\MessageBuilder\OBATO_TO_ATS_MessageBuilder.cs" />
+    <Compile Include="MessagePatterns\MessageCounter.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\ATS_TO_OBATO_Init_MessageObserver\ATS_TO_OBATO_InitMessageInComing.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\ATS_TO_OBATO_Init_MessageObserver\IATS_TO_OBATO_InitMessageCreate.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\ATS_TO_OBATO_Init_MessageObserver\IATS_TO_OBATO_InitMessageWatcher.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\ATS_TO_OBATO_MessageObserver\ATS_TO_OBATO_MessageInComing.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\ATS_TO_OBATO_MessageObserver\IATS_TO_OBATO_MessageCreate.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\ATS_TO_OBATO_MessageObserver\IATS_TO_OBATO_MessageWatcher.cs" />
+    <Compile Include="ExtensionMethods\DateTimeExtensions.cs" />
+    <Compile Include="MessagePatterns\DataPackets\ATS_TO_OBATO\ATS_TO_OBATO.cs" />
+    <Compile Include="MessagePatterns\DataPackets\ATS_TO_OBATO\Adapter\ATS_TO_OBATOAdaptee.cs" />
+    <Compile Include="MessagePatterns\DataPackets\ATS_TO_OBATO\Adapter\ATS_TO_OBATOAdapter.cs" />
+    <Compile Include="MessagePatterns\DataPackets\ATS_TO_OBATO_Init\ATS_TO_OBATO_Init.cs" />
+    <Compile Include="MessagePatterns\DataPackets\ATS_TO_OBATO_Init\Adapter\ATS_TO_OBATO_InitAdaptee.cs" />
+    <Compile Include="MessagePatterns\DataPackets\ATS_TO_OBATO_Init\Adapter\ATS_TO_OBATO_InitAdapter.cs" />
+    <Compile Include="MessagePatterns\DataPackets\OBATO_TO_ATS\OBATO_TO_ATS.cs" />
+    <Compile Include="MessagePatterns\MessageBuilder\ATS_TO_OBATO_Init_MessageBuilder.cs" />
+    <Compile Include="MessagePatterns\MessageBuilder\IMessage.cs" />
+    <Compile Include="MessagePatterns\MessageFactory\IMessageType.cs" />
+    <Compile Include="MessagePatterns\Message.cs" />
+    <Compile Include="MessagePatterns\MessageBuilder\MessageBuilder.cs" />
+    <Compile Include="MessagePatterns\MessageBuilder\MessageCreator.cs" />
+    <Compile Include="MessagePatterns\MessageFactory\MessageSelector.cs" />
+    <Compile Include="MessagePatterns\DataPackets\OBATP_TO_WSATP\OBATP_TO_WSATP.cs" />
+    <Compile Include="MessagePatterns\MessageBuilder\OBATP_TO_WSATP_MessageBuilder.cs" />
+    <Compile Include="MessagePatterns\DataPackets\WSATP_TO_OBATP\WSATP_TO_OBATP.cs" />
+    <Compile Include="MessagePatterns\MessageBuilder\WSATP_TO_OBATP_MessageBuilder.cs" />
+    <Compile Include="MessagePatterns\DataPackets\WSATP_TO_OBATP\Adapter\WSATP_TO_OBATPAdaptee.cs" />
+    <Compile Include="MessagePatterns\DataPackets\WSATP_TO_OBATP\Adapter\WSATP_TO_OBATPAdapter.cs" />
+    <Compile Include="OBATP\OBATPUIPartial.cs" />
+    <Compile Include="ExtensionMethods\TrainCoupledExtensions.cs" />
+    <Compile Include="OBATP\OBATPHelperClass.cs" />
+    <Compile Include="OBATP\OBATP_ATS_Properties.cs" />
+    <Compile Include="OBATP\OBATP_CalculationOperations.cs" />
+    <Compile Include="OBATP\OBATP_Constructor.cs" />
+    <Compile Include="OBATP\OBATP_Properties.cs" />
+    <Compile Include="OBATP\OBATP_WSATC_Properties.cs" />
+    <Compile Include="OBATP\WSATP_TO_OBATPMessageInComing.cs" />
+    <Compile Include="SettingsWindowsObserver\ISettingsWindowsObserver.cs" />
+    <Compile Include="SettingsWindowsObserver\ISettingsWindowsWatcher.cs" />
+    <Compile Include="SettingsWindowsObserver\SettingsWindowsObserver.cs" />
+    <Compile Include="TCPCommunication\ClientATS.cs" />
+    <Compile Include="TCPCommunication\Client.cs" />
+    <Compile Include="TCPCommunication\ClientWSATC.cs" />
+    <Compile Include="ThreadedBindingList.cs" />
+    <Compile Include="TrainDetailsProperties.cs" />
+    <Compile Include="TrainObserver\ITrainCreatedWatcher.cs" />
+    <Compile Include="TrainObserver\ITrainDetailsWindowWatcher.cs" />
+    <Compile Include="TrainObserver\ITrainMovementCreatedWatcher.cs" />
+    <Compile Include="TrainObserver\ITrainMovementRouteCreatedWatcher.cs" />
+    <Compile Include="TrainObserver\ITrainMovementUIWatcher.cs" />
+    <Compile Include="TrainObserver\ITrainNewMovementAuthorityCreatedWatcher.cs" />
+    <Compile Include="UIAdapter\OBATPUIAdaptee.cs" />
+    <Compile Include="UIAdapter\OBATPUIAdapter.cs" />
+    <Compile Include="Settings\CommunicationSettingsModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\CommunicationSettingsModal.Designer.cs">
+      <DependentUpon>CommunicationSettingsModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCPCommunication\Server.cs" />
+    <Compile Include="TCPCommunication\SocketCommunication.cs" />
+    <Compile Include="ModalForms\TrackSettingsModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalForms\TrackSettingsModal.Designer.cs">
+      <DependentUpon>TrackSettingsModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrackWithPosition.cs" />
+    <Compile Include="DisplayManager.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ExceptionMessages.cs" />
+    <Compile Include="FileOperation.cs" />
+    <Compile Include="Settings\GeneralSettingsModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\GeneralSettingsModal.Designer.cs">
+      <DependentUpon>GeneralSettingsModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OBATP\OBATP.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Route.cs" />
+    <Compile Include="Serialization\DictionarySerializableClass.cs" />
+    <Compile Include="Serialization\Serialization.cs" />
+    <Compile Include="Serialization\SerializationPaths.cs" />
+    <Compile Include="Serialization\XMLSerialization.cs" />
+    <Compile Include="ThreadSafeList.cs" />
+    <Compile Include="Track.cs" />
+    <Compile Include="TrainObserver\ITrainObserver.cs" />
+    <Compile Include="TrainObserver\TrainObserver.cs" />
+    <Compile Include="Settings\TrainSettingsModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\TrainSettingsModal.Designer.cs">
+      <DependentUpon>TrainSettingsModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainOnTracks.cs" />
+    <Compile Include="ModalForms\TrainSimModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalForms\TrainSimModal.Designer.cs">
+      <DependentUpon>TrainSimModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIOperation\UIOBATP.cs" />
+    <Compile Include="UIOperation\UIOperation.cs" />
+    <Compile Include="UnitConversion.cs" />
+    <Compile Include="Vehicle\IVehicle.cs" />
+    <Compile Include="Vehicle\Vehicle.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\WSATP_TO_OBATP_MessageObserver\IWSATP_TO_OBATPMessageCreate.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\WSATP_TO_OBATP_MessageObserver\IWSATP_TO_OBATPMessageWatcher.cs" />
+    <Compile Include="MessagePatterns\MessageObserver\WSATP_TO_OBATP_MessageObserver\WSATP_TO_OBATPMessageInComing.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalForms\TrainDetailModal.resx">
+      <DependentUpon>TrainDetailModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\CommunicationSettingsModal.resx">
+      <DependentUpon>CommunicationSettingsModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\GeneralSettingsModal.resx">
+      <DependentUpon>GeneralSettingsModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings\TrainSettingsModal.resx">
+      <DependentUpon>TrainSettingsModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalForms\TrackSettingsModal.resx">
+      <DependentUpon>TrackSettingsModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalForms\TrainSimModal.resx">
+      <DependentUpon>TrainSimModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doorclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dooropen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24-HotTrain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24-NormalTrain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24-DisabledTrain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Localization\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\england.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Metro_istanbul_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

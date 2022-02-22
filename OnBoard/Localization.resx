@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CheckSerilizationFileExceptionMessage" xml:space="preserve">
+    <value>Ayarlar Dosyası Bulanamadı!</value>
+  </data>
+  <data name="DeSerilizationSettingsExceptionMessage" xml:space="preserve">
+    <value>Ayarlar Okunamadı!</value>
+  </data>
+  <data name="LoggingExceptionMessage" xml:space="preserve">
+    <value>Loglar Yazılamıyor!</value>
+  </data>
+  <data name="m_buttonApply" xml:space="preserve">
+    <value>Uygula</value>
+  </data>
+  <data name="m_buttonSave" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="m_communicationItem" xml:space="preserve">
+    <value>Bağlantı</value>
+  </data>
+  <data name="m_generalItem" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="m_groupBoxAllTrains" xml:space="preserve">
+    <value>Trenler</value>
+  </data>
+  <data name="m_groupBoxLog" xml:space="preserve">
+    <value>Loglar</value>
+  </data>
+  <data name="m_groupBoxTrainSettings" xml:space="preserve">
+    <value>Tren Parametreleri</value>
+  </data>
+  <data name="m_groupBoxTrainStart" xml:space="preserve">
+    <value>Tren Başlatma Sıklığı</value>
+  </data>
+  <data name="m_groupBoxWorkingCycle" xml:space="preserve">
+    <value>Çalışma Sıklığı</value>
+  </data>
+  <data name="m_labelCurrentAcceleration" xml:space="preserve">
+    <value>Hızlanma İvmesi :</value>
+  </data>
+  <data name="m_labelCurrentLocation" xml:space="preserve">
+    <value>Konum (cm) :</value>
+  </data>
+  <data name="m_labelCurrentTrainSpeedKM" xml:space="preserve">
+    <value>Hız(km/sa) :</value>
+  </data>
+  <data name="m_labelDoorStatus" xml:space="preserve">
+    <value>Kapı Durumu :</value>
+  </data>
+  <data name="m_labelDoorTimerCounter" xml:space="preserve">
+    <value>Door Timer Counter :</value>
+  </data>
+  <data name="m_labelMinute" xml:space="preserve">
+    <value>Dakika :</value>
+  </data>
+  <data name="m_labelRearCurrentLocation" xml:space="preserve">
+    <value>Arka Hat Bloğu Konumu (cm) :</value>
+  </data>
+  <data name="m_labelSecond" xml:space="preserve">
+    <value>Saniye :</value>
+  </data>
+  <data name="m_labelTrains" xml:space="preserve">
+    <value>Trenler : </value>
+  </data>
+  <data name="m_labelWorkingCycleMessageSend" xml:space="preserve">
+    <value>Mesaj Gönder (ms) :</value>
+  </data>
+  <data name="m_labelWorkingCycleOBATC" xml:space="preserve">
+    <value>OBATC (ms) :</value>
+  </data>
+  <data name="m_labelWorkingUIRefresh" xml:space="preserve">
+    <value>UI Yenileme (ms) :</value>
+  </data>
+  <data name="m_settingsPopup" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="m_tabPageCommunication" xml:space="preserve">
+    <value>Bağlantı</value>
+  </data>
+  <data name="m_tabPageIncomingMessage" xml:space="preserve">
+    <value>Gelen Mesaj</value>
+  </data>
+  <data name="m_tabPageLogsGeneralSettings" xml:space="preserve">
+    <value>Loglar</value>
+  </data>
+  <data name="m_tabPageOutgoingMessage" xml:space="preserve">
+    <value>Giden Mesaj</value>
+  </data>
+  <data name="m_tabPageRoute" xml:space="preserve">
+    <value>Route</value>
+  </data>
+  <data name="m_tabPageTrain" xml:space="preserve">
+    <value>Tren</value>
+  </data>
+  <data name="m_tabPageTrainGeneralSettings" xml:space="preserve">
+    <value>Tren Başlat</value>
+  </data>
+  <data name="m_trainItem" xml:space="preserve">
+    <value>Tren</value>
+  </data>
+  <data name="SerilizationSettingsExceptionMessage" xml:space="preserve">
+    <value>Ayarlar Kaydedilemiyor!</value>
+  </data>
+  <data name="Front_Track_ID" xml:space="preserve">
+    <value>Ön Hat Bloğu ID</value>
+  </data>
+  <data name="Front_Track_Length" xml:space="preserve">
+    <value>Ön Hat Bloğu Boyu(cm)</value>
+  </data>
+  <data name="Front_Track_Location" xml:space="preserve">
+    <value>Ön Hat Bloğu Konumu(cm)</value>
+  </data>
+  <data name="Front_Track_Max_Speed" xml:space="preserve">
+    <value>Front Track Max Speed(km/sa)</value>
+  </data>
+  <data name="Rear_Track_ID" xml:space="preserve">
+    <value>Arka Hat Blo. ID</value>
+  </data>
+  <data name="Rear_Track_Length" xml:space="preserve">
+    <value>Arka Hat Bloğu Boyu(cm)</value>
+  </data>
+  <data name="Rear_Track_Location" xml:space="preserve">
+    <value>Arka Hat Blo. Konumu(cm)</value>
+  </data>
+  <data name="Rear_Track_Max_Speed" xml:space="preserve">
+    <value>Arka Hat Bloğu Hız Limiti(km/sa)</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>Hız (km/sa)</value>
+  </data>
+  <data name="Total_Route_Distance" xml:space="preserve">
+    <value>Toplam MA Uzunluğu(cm)</value>
+  </data>
+  <data name="Train_Name" xml:space="preserve">
+    <value>Tren Adı</value>
+  </data>
+  <data name="CommunicationSettingsModal" xml:space="preserve">
+    <value>Bağlantı Ayarları</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Bağlandı... - </value>
+  </data>
+  <data name="ConnectionFailure" xml:space="preserve">
+    <value>Bağlantı Hatası... - </value>
+  </data>
+  <data name="GeneralSettingsModal" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>IP Adresi : </value>
+  </data>
+  <data name="ListviewColumnFoot" xml:space="preserve">
+    <value>Ayakizi Hat Bloğu</value>
+  </data>
+  <data name="ListviewColumnRouteTrack" xml:space="preserve">
+    <value>Hat Blokları</value>
+  </data>
+  <data name="ListviewColumnSpeed" xml:space="preserve">
+    <value>Hız Sınırı(km/sa)</value>
+  </data>
+  <data name="ListviewColumnStation" xml:space="preserve">
+    <value>İstasyon</value>
+  </data>
+  <data name="ListviewColumnVir" xml:space="preserve">
+    <value>Snl. Meş. Hat Blo.</value>
+  </data>
+  <data name="m_groupBoxTrainSettingsModal" xml:space="preserve">
+    <value>Genel Tren Ayarları</value>
+  </data>
+  <data name="m_labelMaxTrainAcceleration" xml:space="preserve">
+    <value>Max Hızlanma İvmesi(m/s²) :</value>
+  </data>
+  <data name="m_labelMaxTrainDeceleration" xml:space="preserve">
+    <value>Max Yavaşlama İvmesi (m/s²) :</value>
+  </data>
+  <data name="m_labelTrainLengthCM" xml:space="preserve">
+    <value>Tren Uzunluğu (cm) :</value>
+  </data>
+  <data name="m_labelTrainSpeedLimit" xml:space="preserve">
+    <value>Tren Hız Limiti (km/h) :</value>
+  </data>
+  <data name="ReConnect" xml:space="preserve">
+    <value>Tekrar Bağlanılıyor... - </value>
+  </data>
+  <data name="TrainSettingsModal" xml:space="preserve">
+    <value>Tren Ayarları</value>
+  </data>
+  <data name="TryToConnect" xml:space="preserve">
+    <value>Bağlanılıyor... - </value>
+  </data>
+  <data name="CloseSettingsMessage" xml:space="preserve">
+    <value>OnBoard yeni ayarlarla çalışmaya başlayacak.</value>
+  </data>
+  <data name="OpenSettingsMessage" xml:space="preserve">
+    <value>Ayarları Açmak İstiyor Musunuz?</value>
+  </data>
+  <data name="TryConnect" xml:space="preserve">
+    <value>Bağlanılıyor... -</value>
+  </data>
+  <data name="CloseDoors" xml:space="preserve">
+    <value>Kapılar Kapandı...</value>
+  </data>
+  <data name="OpenDoors" xml:space="preserve">
+    <value>Kapılar Açıldı...</value>
+  </data>
+  <data name="AboutBox" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="CancelHoldStationAccepted" xml:space="preserve">
+    <value>İstasyon Tutma İptal Talebi Kabul Edildi....</value>
+  </data>
+  <data name="CancelSkipStationAcceptMessage" xml:space="preserve">
+    <value>İstasyon Atlama İptali Talebi Kabul Edildi....</value>
+  </data>
+  <data name="CancelSkipStationRejectMessage" xml:space="preserve">
+    <value>İstasyon Atlama İptal Talebi Reddedildi....</value>
+  </data>
+  <data name="HoldStationAcceptMessage" xml:space="preserve">
+    <value>İstasyon Tutma Talebi Kabul Edildi....</value>
+  </data>
+  <data name="HoldStationRejectMessage" xml:space="preserve">
+    <value>İstasyon Tutma Talebi Reddedildi...</value>
+  </data>
+  <data name="SkipStationAcceptMessage" xml:space="preserve">
+    <value>İstasyon Atlama Talebi Kabul Edildi....</value>
+  </data>
+  <data name="SkipStationRejectMessage" xml:space="preserve">
+    <value>İstasyon Atlama Talebi Reddedildi....</value>
+  </data>
+  <data name="WaitingForHoldStation" xml:space="preserve">
+    <value>İstasyonda Tutma Aktif Olduğu İçin Tren Bekliyor....</value>
+  </data>
+  <data name="WaitingForMA" xml:space="preserve">
+    <value>Tren Hareket Yetkisi Gelmediği İçin Bekliyor...</value>
+  </data>
+  <data name="m_checkBoxSQLLogs" xml:space="preserve">
+    <value>Logları SQL' e Kaydet</value>
+  </data>
+  <data name="m_labelStaffID" xml:space="preserve">
+    <value>Sicil No : </value>
+  </data>
+  <data name="m_labelOperationTime" xml:space="preserve">
+    <value>Operasyon Zamanı (ms) :</value>
+  </data>
+</root>
