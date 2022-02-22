@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<XMLSerialization xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ATSIPAddress>127.0.0.1</ATSIPAddress>
+  <ATSPort>12101</ATSPort>
+  <ATSCommunicationType>Client</ATSCommunicationType>
+  <WSATCIPAddress>127.0.0.1</WSATCIPAddress>
+  <WSATCPort>11001</WSATCPort>
+  <WSATCCommunicationType>Client</WSATCCommunicationType>
+  <ATSToOBATPIPAddress>127.0.0.1</ATSToOBATPIPAddress>
+  <ATSToOBATPPort>12101</ATSToOBATPPort>
+  <ATSToOBATPCommunicationType>Client</ATSToOBATPCommunicationType>
+  <OBATPToATSIPAddress>127.0.0.1</OBATPToATSIPAddress>
+  <OBATPToATSPort>10201</OBATPToATSPort>
+  <OBATPToATSCommunicationType>Client</OBATPToATSCommunicationType>
+  <WSATCToOBATPIPAddress>127.0.0.1</WSATCToOBATPIPAddress>
+  <WSATCToOBATPPort>11001</WSATCToOBATPPort>
+  <WSATCToOBATPCommunicationType>Client</WSATCToOBATPCommunicationType>
+  <OBATPToWSATCIPAddress>127.0.0.1</OBATPToWSATCIPAddress>
+  <OBATPToWSATCPort>14001</OBATPToWSATCPort>
+  <OBATPToWSATCCommunicationType>Client</OBATPToWSATCCommunicationType>
+  <TrainLength>11200</TrainLength>
+  <MaxTrainDeceleration>1.1</MaxTrainDeceleration>
+  <MaxTrainAcceleration>0.8</MaxTrainAcceleration>
+  <TrainSpeedLimit>80</TrainSpeedLimit>
+  <m_language>English</m_language>
+  <StartTrackID>10103</StartTrackID>
+  <EndTrackID>10305</EndTrackID>
+  <TrackInput>FromFile</TrackInput>
+  <RouteTrack>
+    <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="RouteTrack" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="RouteTrack">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" minOccurs="0" />
+                  <xs:element name="Track_x0020_ID" type="xs:string" minOccurs="0" />
+                  <xs:element name="Start_x0020_Position" type="xs:string" minOccurs="0" />
+                  <xs:element name="End_x0020_Position" type="xs:string" minOccurs="0" />
+                  <xs:element name="Length_x0020__x0028_cm_x0029_" type="xs:string" minOccurs="0" />
+                  <xs:element name="Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_" type="xs:string" minOccurs="0" />
+                  <xs:element name="Connection_x0020_Exit_x0020_1" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+      <DocumentElement>
+        <RouteTrack diffgr:id="RouteTrack1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+          <ID>1</ID>
+          <Track_x0020_ID>10101</Track_x0020_ID>
+          <Start_x0020_Position>600</Start_x0020_Position>
+          <End_x0020_Position>12900</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>12300</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>80</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10103</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+          <ID>2</ID>
+          <Track_x0020_ID>10103</Track_x0020_ID>
+          <Start_x0020_Position>12900</Start_x0020_Position>
+          <End_x0020_Position>38000</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>25100</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>80</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10105</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack3" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+          <ID>3</ID>
+          <Track_x0020_ID>10105</Track_x0020_ID>
+          <Start_x0020_Position>38000</Start_x0020_Position>
+          <End_x0020_Position>56500</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>18500</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>40</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10107</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack4" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+          <ID>4</ID>
+          <Track_x0020_ID>10107</Track_x0020_ID>
+          <Start_x0020_Position>56500</Start_x0020_Position>
+          <End_x0020_Position>156500</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>100000</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>80</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10201</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack5" msdata:rowOrder="4" diffgr:hasChanges="inserted">
+          <ID>5</ID>
+          <Track_x0020_ID>10201</Track_x0020_ID>
+          <Start_x0020_Position>156500</Start_x0020_Position>
+          <End_x0020_Position>157500</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>1000</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>120</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10203</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack6" msdata:rowOrder="5" diffgr:hasChanges="inserted">
+          <ID>6</ID>
+          <Track_x0020_ID>10203</Track_x0020_ID>
+          <Start_x0020_Position>157500</Start_x0020_Position>
+          <End_x0020_Position>207500</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>50000</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>20</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10205</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack7" msdata:rowOrder="6" diffgr:hasChanges="inserted">
+          <ID>7</ID>
+          <Track_x0020_ID>10205</Track_x0020_ID>
+          <Start_x0020_Position>207500</Start_x0020_Position>
+          <End_x0020_Position>224000</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>16500</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>60</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10207</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack8" msdata:rowOrder="7" diffgr:hasChanges="inserted">
+          <ID>8</ID>
+          <Track_x0020_ID>10207</Track_x0020_ID>
+          <Start_x0020_Position>224000</Start_x0020_Position>
+          <End_x0020_Position>240500</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>16500</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>40</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10209</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack9" msdata:rowOrder="8" diffgr:hasChanges="inserted">
+          <ID>9</ID>
+          <Track_x0020_ID>10209</Track_x0020_ID>
+          <Start_x0020_Position>240500</Start_x0020_Position>
+          <End_x0020_Position>257000</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>16500</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>50</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10211</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack10" msdata:rowOrder="9" diffgr:hasChanges="inserted">
+          <ID>10</ID>
+          <Track_x0020_ID>10211</Track_x0020_ID>
+          <Start_x0020_Position>257000</Start_x0020_Position>
+          <End_x0020_Position>273500</End_x0020_Position>
+          <Length_x0020__x0028_cm_x0029_>16100</Length_x0020__x0028_cm_x0029_>
+          <Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>40</Speed_x0020_Limit_x0020__x0028_km_x002F_sa_x0029_>
+          <Connection_x0020_Exit_x0020_1>10301</Connection_x0020_Exit_x0020_1>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack11" msdata:rowOrder="10" diffgr:hasChanges="inserted">
+          <ID>11</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack12" msdata:rowOrder="11" diffgr:hasChanges="inserted">
+          <ID>12</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack13" msdata:rowOrder="12" diffgr:hasChanges="inserted">
+          <ID>13</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack14" msdata:rowOrder="13" diffgr:hasChanges="inserted">
+          <ID>14</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack15" msdata:rowOrder="14" diffgr:hasChanges="inserted">
+          <ID>15</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack16" msdata:rowOrder="15" diffgr:hasChanges="inserted">
+          <ID>16</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack17" msdata:rowOrder="16" diffgr:hasChanges="inserted">
+          <ID>17</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack18" msdata:rowOrder="17" diffgr:hasChanges="inserted">
+          <ID>18</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack19" msdata:rowOrder="18" diffgr:hasChanges="inserted">
+          <ID>19</ID>
+        </RouteTrack>
+        <RouteTrack diffgr:id="RouteTrack20" msdata:rowOrder="19" diffgr:hasChanges="inserted">
+          <ID>20</ID>
+        </RouteTrack>
+      </DocumentElement>
+    </diffgr:diffgram>
+  </RouteTrack>
+  <TrainFrequencyMinute>0</TrainFrequencyMinute>
+  <TrainFrequencySecond>21</TrainFrequencySecond>
+  <OperationTimeCycle>100</OperationTimeCycle>
+  <OBATCWorkingCycle>200</OBATCWorkingCycle>
+  <MessageSendWorkingCycle>210</MessageSendWorkingCycle>
+  <UIRefreshWorkingCycle>400</UIRefreshWorkingCycle>
+  <WriteLogATS_TO_OBATO>true</WriteLogATS_TO_OBATO>
+  <WriteLogATS_TO_OBATO_Init>false</WriteLogATS_TO_OBATO_Init>
+  <WriteLogOBATO_TO_ATS>true</WriteLogOBATO_TO_ATS>
+  <WriteLogOBATP_TO_WSATP>false</WriteLogOBATP_TO_WSATP>
+  <WriteLogWSATP_TO_OBATP>false</WriteLogWSATP_TO_OBATP>
+  <WriteLogSQL>false</WriteLogSQL>
+  <PersonnelID />
+  <PlayID>1059</PlayID>
+  <Trains>
+    <int>0</int>
+  </Trains>
+</XMLSerialization>
